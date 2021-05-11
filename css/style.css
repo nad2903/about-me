@@ -5,8 +5,8 @@
 }
 
 body {
-  margin: 0 auto;
-  max-width: 800px;
+  display: block;
+  margin: 30 auto;
 }
 
 h1,
@@ -17,16 +17,23 @@ h3 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 70px;
+  margin: 10px 0 20px;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 40px;
+  margin-top: 10px;
 }
 
 h3 {
   font-size: 24px;
   opacity: 0.7;
+  margin: 0 20px 20px;
+}
+
+p.about-info {
+  margin: 0 20px 20px;
 }
 
 .navigation-links {
@@ -49,6 +56,12 @@ h3 {
   color: white;
 }
 
+.app-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -63,6 +76,10 @@ h3 {
   margin: 10px;
 }
 
+.about-info {
+  text-align: center;
+}
+
 .email-link {
   display: flex;
   justify-content: center;
@@ -73,4 +90,30 @@ h3 {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 40px;
+    margin: 20px;
+  }
+  .app-link {
+    display: block;
+    margin: 30 auto;
+  }
+  p {
+    text-align: center;
+  }
+  .contact-me {
+    font-size: 30px;
+    margin: 30px 30px 0;
+  }
+  .email-link {
+    font-size: 20px;
+  }
 }
